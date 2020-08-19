@@ -24,5 +24,7 @@ $subject = "Survey Form";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 echo "Thank you for your feedback!";
+header('Location: thank-you.html')
 ?>
+
 
