@@ -19,12 +19,11 @@ Contact Preference $conact_pref \n
 Business size = $business_size \n
 Interested in  = $interest \n
 Message: $message";
-$recipient = "aceexspence1990@gmail.com";
+$recipient = "apprenticetest@swofmedia.co.uk";
 $subject = "Survey Form";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 echo "Thank you for your feedback!";
-header('Location: thank-you.html')
 ?>
 
 
