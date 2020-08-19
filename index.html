@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <img src="https://swof.media/wp-content/uploads/2015/09/SwofLogo_Web.png" alt="logo">
+      <h1 id="title" class="centered">Swof Media Survey Form</h1>
+    </header>
+    <form action ="data.php" method = "post"  id="survey-form">
+      <div class="details">
+        <label id="name-form" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="styling-formatting"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="details">
+        <label id="email-form" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="styling-formatting"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+
+      <div class="details">
+        <label id="phone-form" for="Phone">Phone Number</label>
+        <input
+          type="phone"
+          name="phone"
+          id="phone"
+          class="styling-formatting"
+          placeholder="Enter your Phone Number"
+        />
+      </div>
+
+      <div class="details">
+        <p>What is the best way to contact you?</p>
+        <label>
+          <input
+            name="contact-pref"
+            value="email"
+            type="radio"
+            class="contact-pref"
+            checked
+          />Email</label
+        >
+       
+        <label>
+            <input
+              name="contact-pref"
+              value="phone"
+              type="radio"
+              class="contact-pref"
+            />Phone</label
+          >
+        </div>
+      <div class="details">
+        <p>What is the size of the business you are enquiring for?</p>
+        <select id="dropdown" name="business-size" class="styling-formatting" required>
+          <option disabled selected value>Please select an option</option>
+          <option value="soletrader">Sole Trader</option>
+          <option value="sme">Small to Medium</option>
+          <option value="large">Large Company</option>
+          <option value="noanswer">Prefer not to say</option>
+        </select>
+      </div>
+ 
+      <div class="details">
+        <p>
+          What Swof Media services are you interested in?
+        </p>
+  
+        <label
+          ><input
+            name="interested-in"
+            value="design-dev"
+            type="checkbox"
+            class="input-checkbox"
+          />Web Design and Development</label
+        >
+        <label>
+          <input
+            name="interested-in"
+            value="digital-marketing"
+            type="checkbox"
+            class="input-checkbox"
+          />Digital Marketing</label
+        >
+        <label
+          ><input
+            name="interested-in"
+            value="graphic-design"
+            type="checkbox"
+            class="input-checkbox"
+          />Graphic Design</label
+        >
+        <label
+          ><input
+            name="interested-in"
+            value="challenges"
+            type="checkbox"
+            class="input-checkbox"
+          />IT Support</label
+        >
+        <label
+          ><input
+            name="interested-in"
+            value="mobile-apps"
+            type="checkbox"
+            class="input-checkbox"
+          />Mobile Apps</label
+        >
+        <label
+          ><input
+            name="interested-in"
+            value="custom-software"
+            type="checkbox"
+            class="input-checkbox"
+          />Custom Software</label
+        >
+        <label
+          ><input
+            name="interested-in"
+            value="branding"
+            type="checkbox"
+            class="input-checkbox"
+          />Branding</label
+        >
+      <div class="details">
+        <p>Please provide us with any further details</p>
+        <textarea
+          id="further-details"
+          class="input-textarea"
+          name="further-details"
+          placeholder="Please provide details..."
+        ></textarea>
+      </div>
+  
+      <div class="details">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
